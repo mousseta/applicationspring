@@ -1,0 +1,16 @@
+{
+  "name": "Spring Boot Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "mvn clean install",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "pivotal.vscode-spring-boot",
+        "batisteo.vscode-django",
+        "editorconfig.editorconfig"
+      ]
+    }
+  }
+}
